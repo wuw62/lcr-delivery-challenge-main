@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout Page</title>
+    <script type="module" src="app.js"></script>
+</head>
+<body>
+    <header>
+      <h1>Get your rewards faster. Buy, Gift or Transfer Miles today!</h1>
+    </header>
+    
+    <!-- <section class="cards-grid">
+
+      <div class="card">
+        <h3>Buy 2000 miles</h3>
+        <p>$177.00</p>
+      </div>
+
+      <div class="card">
+        <h3>Buy 4000 miles</h3>
+        <p>$200</p>
+      </div>
+
+      <div class="card">
+        <h3>Buy 7000 miles</h3>
+        <p>$450</p>
+      </div>
+    </section> -->
+  
+    <section class="cards-grid">
+        <!-- Card 1 -->
+        <div class="card" data-miles="100" data-cost="10">
+          <h3 id="b1_amount">Card 1</h3>
+          <p id="b2_cost">Card 1 details...</p>
+          <button id="b1" class="buy-button">Buy</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="card" data-miles="200" data-cost="20">
+          <h3 id="b2_amount">Card 2</h3>
+          <p id="b2_cost">Card 2 details...</p>
+          <button id="b2" class="buy-button">Buy</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="card" data-miles="300" data-cost="30">
+          <h3 id="b3_amount">Card 3</h3>
+          <p id="b2_cost">Card 3 details...</p>
+          <button id="b3" class="buy-button">Buy</button>
+        </div>
+      </section>
+      
+
+
+    <form class="checkout-form">
+     <div class="form-content">
+      <section class="payment-details">
+        <h2>Payment Details</h2>
+        <p>We accept all major credit cards. Please ensure that you enter your
+        details exactly as they appear on cur credit card statement. All fields
+        are required unless is indicated.
+        <p>
+        <label for="cardholder-name">Cardholder Name</label>
+        <input type="text" id="cardholder-name" name="cardholder-name" required>
+        
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number" pattern="\d{16}" required>
+        
+        <label for="expiration-date">Expiration Date</label>
+        <input type="text" id="expiration-date" name="expiration-date" pattern="(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})" required>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" pattern="\d{3,4}" required>
+      </section>
+
+
+
+  
+      
+
+      <section class="billing-address">
+        <h2>Billing Address</h2>
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="address">
+
+        <label for="optional-address">Apt, Suite, Unit Number(Optional)</label>
+        <input type="text" id="optional-address" name="optional-address">
+
+        <label for="city">City/Town</label>
+        <input type="text" id="city" name="city">
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country">
+
+        <label for="state">State/Province<label>
+        <input type="text" id="state-province" name="state-province">
+
+        <label for="zip">Zip/Postal code</label>
+        <input type="text" id="zip-postal" name="zip-postal">
+
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="email">Email receipt to</label>
+        <input type="email" id="email" name="email">
+
+      </section>
+  
+      <section class="terms">
+        <input type="checkbox" id="agree-terms" name="agree-terms" required>
+        <label for="agree-terms">I agree to the <a href="/terms-and-conditions" target="_blank">terms & conditions</a></label>
+      </section>
+      
+      <button type="submit" class="buy-button">Buy Miles</button>
+     </div>
+
+
+     <aside class="order-summary">
+        <h2>Order Summary</h2>
+        <hr>
+        <p>Total miles <span id="total-miles">0</span></p>
+        <p>GST/HST <span id="GST-HST">0</span></p>
+        <hr>
+        <p>Total cost <span id="total-cost">0.00</span></p>
+     </aside>
+  
+     
+    </form>
+  </body>
+
+  <script>
+    </script>
+  </html>
+  
+  
