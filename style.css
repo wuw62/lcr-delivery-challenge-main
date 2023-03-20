@@ -127,7 +127,7 @@ input[type="checkbox"] {
     flex-basis: 25%;
     min-width: 200px;
 
-    height: 35vh; /* Adjust this value to fit your design */
+    height: 35vh; 
     overflow-y: auto; /* To enable scrolling when the content overflows the container */
 }
 
