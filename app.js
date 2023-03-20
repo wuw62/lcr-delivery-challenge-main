@@ -6,9 +6,9 @@ const miles = document.getElementById("total-miles");
 const gst = document.getElementById("GST-HST");
 
 const retrieveData = (index) => {
-    cost.innerHTML = cardData[index].cost * (1 + gstPercentage);
+    cost.innerHTML = (Math.round(cardData[index].cost * (1 + gstPercentage) * 100) / 100).toFixed(2);
     miles.innerHTML = cardData[index].amount;
-    gst.innerHTML = cardData[index].cost * gstPercentage;
+    gst.innerHTML = (Math.round(cardData[index].cost * gstPercentage * 100) / 100).toFixed(2);
 }
 
 const b1Amount = document.getElementById("b1_amount");
